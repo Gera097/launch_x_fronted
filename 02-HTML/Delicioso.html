@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería "El Delicioso"</title>
+    <link rel="stylesheet" href="stylesheets/Delicioso.css">
+</head>
+<body>
+    
+    <h1>Pastelería "El Delicioso"</h1>
+    <img src="assets/LogoPastelería.png" alt="logo de la pastelería, un pastel que dice El Delicioso, pastelería" class="Logo">
+
+    <section>
+        <h2>Pasteles</h2>
+        <dl>
+            <dt>Tres leches</dt>
+            <dd>$250.00</dd>
+            <dt>Cupcakes</dt>
+            <dd>$30.00</dd>
+            <dt>Cheesecake</dt>
+            <dd>$200.00</dd>
+            <dt>Tradicional</dt>
+            <dd>$100.00</dd>
+            <dt>Nata</dt>
+            <dd>$120.00</dd>
+            
+        </dl>
+    </section>
+
+    <section>
+        <h2>Sabores</h2>
+        <dl>
+            <dt>Fresa</dt>
+            <dd>$55.00</dd>
+            <dt>Chocolate</dt>
+            <dd>$60.00</dd>
+            <dt>Vainilla</dt>
+            <dd>$50.00</dd>
+            <dt>Limón</dt>
+            <dd>$50.00</dd>
+            <dt>Naranja</dt>
+            <dd>$50.00</dd>
+        </dl>
+    </section>
+
+    <section>
+        <h2>Adornos</h2>
+        <dl>
+            <dt>Fondant</dt>
+            <dd>$15.00</dd>
+            <dt>Chocolate</dt>
+            <dd>$20.00</dd>
+            <dt>Nueces</dt>
+            <dd>$20.00</dd>
+            <dt>Fresas</dt>
+            <dd>$20.00</dd>
+            <dt>Frutas</dt>
+            <dd>$30.00</dd>
+            <dt>Chantilli</dt>
+            <dd>$30.00</dd>
+
+
+        </dl>
+    </section>
+
+    <section>
+    <h2>Mi pastel:</h2>
+    
+    <form>
+        <div>
+        <label>Tres leches</label><input type="radio" name="pastel" value="tres_leches" required>
+        <label>Cupcake</label><input type="radio" name="pastel" value="cupcake">
+        <label>Cheesecake</label><input type="radio" name="pastel" value="cheesecake">
+        <label>Tradicional</label><input type="radio" name="pastel" value="tradicional">
+        <label>Nata</label><input type="radio" name="pastel" value="nata">
+        </div>
+        <br>
+
+        <div>
+        <label>Fresa<input type="checkbox" name="sabor" value="fresa"></label>
+        <label>Chocolate<input type="checkbox" name="sabor" value="chocolate"></label>
+        <label>Vainilla<input type="checkbox" name="sabor" value="vainilla"></label>
+        <label>Limón<input type="checkbox" name="sabor" value="limón"></label>
+        <label>Naranja<input type="checkbox" name="sabor" value="naranja"></label>
+        </div>
+        <br>
+
+        <div>
+        <label>Fondant<input type="checkbox" name="adornos" value="fondant"></label>
+        <label>Chocolate<input type="checkbox" name="adornos" value="chocolate"></label>
+        <label>Nueces<input type="checkbox" name="adornos" value="nueces"></label>
+        <label>Fresas<input type="checkbox" name="adornos" value="fresas"></label>
+        <label>Frutas<input type="checkbox" name="adornos" value="frutas"></label>
+        <label>Chantilli<input type="checkbox" name="adornos" value="chantilli"></label>
+        </div>
+        <br>
+
+        <!-- Sección para que el usuario llene sus datos de contacto-->
+        <div>
+            <h3>Mis datos</h3>
+            <label>Nombre: <input type="text" name="nombre"></label>
+            <br>
+            <label>Teléfono: <input type="tel" name="tel"></label>
+            <br>
+            <label>Correo Electrónico :<input type="email" name="email"></label>
+            <br>
+
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Enviar formulario">
+            <input type="reset" value="Reseteado">
+        </div>
+         
+    </form>
+    <p>En caso de elegir más de un sabor, se cobrará el precio del sabor más alto</p>
+    
+    </section>
+
+    <section>
+        <h2>Contacto</h2>
+        <h3>Dirección:</h3>
+        <p>Calle "El bosque", colonia "Norte", Salamanca, Gto.</p>
+        <h3>Teléfono:</h3>
+        <p>6484872</p>
+        <h3>Horario de atención:</h3>
+        <p>Lunes a Viernes de 8:00 a 17:00 <br>
+           Sábados y Domingos de 8:00 a 13:00
+        </p>
+    </section>
+    
+
+</body>
+</html>

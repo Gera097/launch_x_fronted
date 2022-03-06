@@ -1,0 +1,62 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #fcfcc4;
+}
+
+h1, h2, th{
+    color: #c2556b;
+}
+
+
+h3{
+    color: #bb6386;
+}
+
+dt{
+    color: #bb6386;
+    font-weight:550;
+}
+
+
+dd{
+    color: #df7b64;
+}
+
+p{
+    color: #c2556b;
+}
+
+label{
+    color: #c2556b;
+    font-weight: 550;
+}
+
+/* Estilos para las tablas */
+table {
+    table-layout:auto;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #bb6386;
+
+  }
+  
+  caption{
+      color:#bb6386;
+      font-style: italic;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+
+  th {
+    letter-spacing: 2px;
+  }
+  
+  td {
+    letter-spacing: 1px;
+  }
