@@ -37,8 +37,8 @@ p, dd{
 }
 
 .blue-icon {
-    width: 2rem;
-    height: 2rem;
+    width: 2em;
+    height: 2em;
     color:#2949C7;
     margin: 0px 1rem;
     padding: 0.5rem 0.5rem 0.25rem 0.5rem;
@@ -248,6 +248,10 @@ button{
     color: #16366C;
 }
 
+.mid-list i {
+    font-size:x-large;
+}
+
 .No-selected{
     margin-top: 1em;
     margin-right: 25%;
@@ -347,6 +351,7 @@ box-shadow: 2px 18px 14px -8px rgba(97,154,224,0.3);
 .Selected dd{
     font-size: 16px;
     margin-top: 1em;
+    margin-left: 12%;
     margin-right: 3em;
 
 }
@@ -374,9 +379,26 @@ box-shadow: 2px 18px 14px -8px rgba(97,154,224,0.3);
     
 
 }
+.Page4-Left i {
+    font-size: xx-large;
+    margin-left: 12.5%;
+}
+
+.Page4-Left button {
+    margin-left: 12.5%;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 75%; 
+}
 
 .Page4-Left .card1 {
     grid-area: tl;
+}
+
+.card-text {
+    display: inline-block;
+    margin-bottom: 10%;
 }
 
 .Page4-Left .card2 {
