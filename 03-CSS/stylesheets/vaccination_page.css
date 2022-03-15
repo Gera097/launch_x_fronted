@@ -46,6 +46,11 @@ p, dd{
     box-shadow: inset 5rem 1rem rgba(4, 58, 175, 0.103);
 }
 
+body {
+margin-right: 5%;
+margin-left: 5%;
+}
+
 /* ----- Top navigation section -----*/
 
 .top-nav {
@@ -92,6 +97,9 @@ button{
     color: whitesmoke;
     font-size: large;
     border-color: aliceblue;
+    -webkit-box-shadow: 2px 18px 14px -8px rgba(97,154,224,0.3);
+    -moz-box-shadow: 2px 18px 14px -8px rgba(97,154,224,0.3);
+    box-shadow: 2px 18px 14px -8px rgba(97,154,224,0.3);
 }
 
 .blue-gradient {
@@ -126,12 +134,13 @@ button{
 
 .Page1-left{
 
-    margin: 15% 20%;
+    margin: 10% 10%;
     grid-area: Left;
     align-self: start;
     justify-self: center;
     display: grid;
     row-gap: 20%;
+    z-index: 1;
 }
 
 .Page1-left p{
@@ -156,55 +165,60 @@ button{
 .banner {
     grid-area: 1 / 1 / 2 / 3;
     align-self: end;
-    margin: 7.5% 25% 2.5% 10%;
-    
+    margin-right: 25%;
+    margin-left: 5%;
 }
 
 .banner h3 {
     margin-bottom: 2.5%;
 }
 .in_banner {
+    margin-bottom: 20px;
+    padding: 2%;
     background-color: rgba(255, 255, 255, 0.75);
     border: 5px;
     border-radius: 5px;
     position: relative;
     z-index: 1 ;
-    height: 120px;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    
+    display: grid;
+    grid-template-columns: 30% 30% 30% 10%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "c1u c2u c3u c4";
 }
 
-.in_banner button {
-    position: absolute;
-    top: 25%;
-    right: 5%;
+.banner-content{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "icono header"
+    ". data";  
 }
 
-.in_banner dl {
-   display: block;
-   height: 50px;
+.banner-content i {
+    grid-area: icono;
+    margin: 0%;
+    font-size: larger;
+    width: 1em;
+    height: 1em;
+    padding: 0.5em;
+    justify-self: center;
 }
 
-.in_banner dt {
-    display: inline;
-    position: relative;
-
-    bottom: 25%;
+.banner-content .p1 {
+    grid-area: header;
     font-size: 25px;
-    color: #818894;
-    margin-left: 20px;
 }
 
-.in_banner dd {
-    display: inline;  
-    position: relative;
-    top: 25%;
+.banner-content .p2 {
+    grid-area: data;
     color: #16366C;
     font-size: 30px;
     font-weight: 600;
-    
+}
+
+.in_banner button {
+    grid-area: c4;
+    place-self: center;
 }
 
 .Sponsors{
@@ -509,6 +523,6 @@ footer{
 
 .policy p{
     display: inline;
-    margin: 2em 1em;
+    margin: 2em 0.5em;
 }
 
